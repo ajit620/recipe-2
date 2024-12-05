@@ -30,3 +30,16 @@ function displayRecipes(recipes) {
     })
     resultsList.innerHTML = html;
 }
+// Ensure script compatibility
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Recipe App is running on mobile!");
+    
+    // Example interaction
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        alert("Recipe coming soon!");
+      });
+    });
+  });
+  
